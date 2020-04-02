@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -21,7 +22,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
 .App-link {
@@ -35,4 +36,67 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar{
+  display: flex;
+  background-color: lightgreen;
+  padding:20px;
+  height: 10%;
+  width:100vw;
+}
+
+.navButtons{
+  background-color: rgb(88, 136, 37);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+.change{
+  color: white;
+}
+
+
+
+
+.infoContainer{
+  display: flex;
+  height: 85vh;
+  width: 100vw;
+}
+.List{
+  overflow: hidden;
+}
+.firstColumn{
+  position: relative;
+  border: grey 1px solid;
+  height: 100vh;
+  width: 1vw;
+  transition: all ease-in-out .4s;
+  z-index: 1;
+}
+.firstColumn:hover{
+  width: 20vw;
+  overflow: hidden;
+}
+
+.secondColumn{
+  position: relative;
+  border: grey 2px solid;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+
+
+.loginForm{
+  height:100vh;
+  width:100vw;
 }
