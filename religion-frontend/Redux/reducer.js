@@ -3,12 +3,16 @@ let initialState = { }
     const reducer = (state = initialState, action) => {
       switch (action.type) {
        case 'Intial':
+        
          let religions = []
-         action.payload.forEach(religion => {
-           const {name,categories} = religion
-            const dummy_obj = {[name]:categories}
-            religions.push(dummy_obj)
+         
+         action.payload.religions.forEach(religion => {
+                  const {name,categories} = religion
+                  const dummy_obj = {name: name, categories:categories}
+                  religions.push(dummy_obj)
+                 
          })
+
          return{...state,religions:religions}
 
 
@@ -19,5 +23,7 @@ let initialState = { }
     }
     
     export default reducer
+
+    // 
 
     

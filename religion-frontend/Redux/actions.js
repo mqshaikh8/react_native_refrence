@@ -1,4 +1,4 @@
-export const Intial = (allContent) => {
+export const Initial = (allContent) => {
     return {
       type: "Intial",
       payload: allContent

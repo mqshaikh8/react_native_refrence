@@ -2,10 +2,12 @@ import React,{useState} from 'react';
 import { StyleSheet, Text,View,Image,TouchableWithoutFeedback} from 'react-native';
 
 export default  function Home({navigation}){
+ 
+
     return(
         <View style={home.parentContainer}>
             <View style={home.container}>
-                <TouchableWithoutFeedback onPress={() => navigation.navigate('SubList')}>
+                <TouchableWithoutFeedback onPress={() => navigation.navigate('List',{name:"Atheism"})}>
                     <View style={home.subContainer}>
                         <Image
                             style={home.img}
@@ -17,7 +19,7 @@ export default  function Home({navigation}){
                     </View> 
                 </TouchableWithoutFeedback>
 
-                <TouchableWithoutFeedback onPress={() => navigation.navigate('SubList')}> 
+                <TouchableWithoutFeedback onPress={() => navigation.navigate('List',{name:"Hinduism"})}> 
                     <View style={home.subContainer}>
                         <Image
                             style={home.img}
@@ -27,7 +29,7 @@ export default  function Home({navigation}){
                     </View>
                 </TouchableWithoutFeedback>
 
-                <TouchableWithoutFeedback onPress={() => navigation.navigate('SubList')}> 
+                <TouchableWithoutFeedback onPress={() => navigation.navigate('List',{name:"Judaism"})}> 
                     <View style={home.subContainer}>
                         <Image
                             style={home.img}
@@ -39,7 +41,7 @@ export default  function Home({navigation}){
 
             </View>
            <View style={home.container}>
-                <TouchableWithoutFeedback onPress={() => navigation.navigate('SubList')}> 
+                <TouchableWithoutFeedback onPress={() => navigation.navigate('List',{name:"Christian"})}> 
                     <View style={home.subContainer}>
                         <Image
                             style={home.img}
@@ -49,7 +51,7 @@ export default  function Home({navigation}){
                     </View>
                 </TouchableWithoutFeedback>
 
-                <TouchableWithoutFeedback onPress={() => navigation.navigate('SubList')}> 
+                <TouchableWithoutFeedback onPress={() => navigation.navigate('List',{name:"Islam"})}> 
                     <View style={home.subContainer}>
                         <Image
                             style={home.img}
