@@ -7,17 +7,6 @@ export default  function Home({navigation}){
     return(
         <View style={home.parentContainer}>
             <View style={home.container}>
-                <TouchableWithoutFeedback onPress={() => navigation.navigate('List',{name:"Atheism"})}>
-                    <View style={home.subContainer}>
-                        <Image
-                            style={home.img}
-                            source={require('../Pictures/AethismPic.png')}
-                        />
-                        <Text>
-                            Atheism
-                        </Text>
-                    </View> 
-                </TouchableWithoutFeedback>
 
                 <TouchableWithoutFeedback onPress={() => navigation.navigate('List',{name:"Hinduism"})}> 
                     <View style={home.subContainer}>
@@ -41,7 +30,7 @@ export default  function Home({navigation}){
 
             </View>
            <View style={home.container}>
-                <TouchableWithoutFeedback onPress={() => navigation.navigate('List',{name:"Christian"})}> 
+                <TouchableWithoutFeedback onPress={() => navigation.navigate('List',{name:"Christianity"})}> 
                     <View style={home.subContainer}>
                         <Image
                             style={home.img}
@@ -58,6 +47,29 @@ export default  function Home({navigation}){
                             source={require('../Pictures/Islam.png')}
                             />
                         <Text>Islam</Text>
+                    </View>
+                </TouchableWithoutFeedback>
+           </View>
+           <View style={home.container}>
+                <TouchableWithoutFeedback onPress={() => navigation.navigate('List',{name:"Atheism"})}>
+                    <View style={home.subContainer}>
+                        <Image
+                            style={home.img}
+                            source={require('../Pictures/AethismPic.png')}
+                        />
+                        <Text>
+                            Atheism
+                        </Text>
+                    </View> 
+                </TouchableWithoutFeedback>
+
+                <TouchableWithoutFeedback onPress={() => navigation.navigate('List',{name:"Budhissm"})}> 
+                    <View style={home.subContainer}>
+                        <Image
+                            style={home.img}
+                            source={require('../Pictures/budhissm.png')}
+                            />
+                        <Text>Budhism</Text>
                     </View>
                 </TouchableWithoutFeedback>
            </View>
@@ -81,7 +93,7 @@ const home = StyleSheet.create({
     },
     subContainer:{
         flex:1,
-        height:50,
+        height:175,
         width:50,
         marginLeft:10,
         marginTop:20,
@@ -89,7 +101,7 @@ const home = StyleSheet.create({
         alignItems:'center'
     },
     img:{
-        height:30,
-        width:30
+        height:70,
+        width:70
     }
   });

@@ -1,6 +1,8 @@
-import React,{useState} from 'react';
-import { StyleSheet, Text,View,Image,TouchableHighlight} from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, Image, TouchableHighlight } from 'react-native';
 import {connect} from 'react-redux'
+// import * as fs from 'fs'
+
 
 function List({route, navigation,religions,dispatch }){
     
@@ -29,7 +31,7 @@ const mstp = (state) => {
 const styles = StyleSheet.create({
     container: {
     flex: 1,
-    backgroundColor:'#111A41',
+    backgroundColor:'white',
     flexDirection:"column",
     height:200,
     justifyContent:'center',
@@ -37,7 +39,7 @@ const styles = StyleSheet.create({
       
     },
     item:{
-        backgroundColor:'#FF0000',
+        
         marginTop:50
     }
    

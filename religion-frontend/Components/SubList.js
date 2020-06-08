@@ -6,10 +6,10 @@ function SubList({route, navigation,dispatch }){
     const { topics } = route.params;
         console.log(topics)
 
-    let subListHandler = () => topics.map(topic => <Text>{topic.name}</Text>)
+    let subListHandler = () => topics.map(topic => <TouchableHighlight key={topic.id} onPress={() => navigation.navigate('Article',{article:topic.article})}><Text >{topic.name}</Text></TouchableHighlight>)
     return(
-        <View>
-            <View style={styles.container}>{route.params ? subListHandler() : null}</View>
+        <View style={styles.container}>
+            <View >{route.params ? subListHandler() : null}</View>
         </View>
     )
 }
@@ -22,7 +22,7 @@ function SubList({route, navigation,dispatch }){
 const styles = StyleSheet.create({
     container: {
     flex: 1,
-    backgroundColor:'grey',
+    backgroundColor:'white',
     flexDirection:"column",
     height:200,
     justifyContent:'center',

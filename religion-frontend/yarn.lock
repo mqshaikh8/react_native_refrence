@@ -1157,10 +1157,10 @@
   dependencies:
     nanoid "^3.0.2"
 
-"@react-navigation/stack@^5.2.9":
-  version "5.2.9"
-  resolved "https://registry.yarnpkg.com/@react-navigation/stack/-/stack-5.2.9.tgz#6bc849c9d6ece4f2659a07c1b3afd93adc9bc0c7"
-  integrity sha512-JK2B9hZGP39uN9HJZZ46clqyazHu2nCkKcXrai8q50LuxTTVG5OMndr9/cmWWPip/eYmmgUDobM6W5ee83JOLw==
+"@react-navigation/stack@^5.2.14":
+  version "5.2.18"
+  resolved "https://registry.yarnpkg.com/@react-navigation/stack/-/stack-5.2.18.tgz#673e7e0183d216212ceb28b701c6c02d68d84ffc"
+  integrity sha512-8+6+4hfwqOP1brdwG8RffpRQqTIUH00YMm3wqXSex2N2aJCgR79gvYqWu23JtipfSUaMYCuO8n2LyUeg3W/AkQ==
   dependencies:
     color "^3.1.2"
     react-native-iphone-x-helper "^1.2.1"
@@ -4344,6 +4344,11 @@ react-native-off-canvas-menu@^0.1.32:
   version "0.1.32"
   resolved "https://registry.yarnpkg.com/react-native-off-canvas-menu/-/react-native-off-canvas-menu-0.1.32.tgz#af1143f9b1a3dfa89b5465f2a054084cac144003"
   integrity sha512-oHYYqECXf63ndQsHItCRkiAGgPNoWPjiTQO+4t6zahDKEmS1KkwG5fhzucr8sSMthZx4qXo+qZyQwv90vMjCeQ==
+
+react-native-pure-jwt@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/react-native-pure-jwt/-/react-native-pure-jwt-2.2.1.tgz#fdc02b9d10b2f99a00ce344fc84eedd0b315df24"
+  integrity sha512-e4foOEiHLPEVH7KctYJ3R12i4icD5VJdVdDm7OnRNtQsgbAIHBYMDXqE/AqWH2kGtIEQruTQb67tmtNt2IRdfg==
 
 react-native-reanimated@~1.7.0:
   version "1.7.1"
